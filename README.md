@@ -71,7 +71,11 @@ public final class MyClient
     void foobar() {
         // This code will always work, no matter the version.
         // This entire class, if designed correctly, can be completely version-independent!
+        // Note that this means you do not need to directly reference any packages either.
         System.out.println(Minecraft.getSomeField());
+        
+        // If you, for example, have a field that returns a class in the `net.minecraft` package,
+        // you should make it return a bridge instead, and follow the examples above to implement that bridge as well.
     }
 }
 ```
