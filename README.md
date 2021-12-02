@@ -6,7 +6,7 @@ Used for cross-compatibility in Constellar, works across versions.
 All different client versions have to do is implement these interfaces accordingly.
 
 The aim of this system is to add a layer of agnosticism between versions,
-allowing similar (or even exactly the same(!))code to work on different versions,
+allowing similar (or even exactly the same) code to work on different versions,
 using only bridges.
 
 Yes, this concept is nearly identical to Lunar's bridge system.
