@@ -50,7 +50,7 @@ public abstract class MixinExampleBridge implements IExampleBridge // pretend Ex
 }
 ```
 Thanks to the magic of mixins, we can safely cast an instance of `Example` to `IExampleBridge`, and use it with a safe conscience.
-`((IExampleBridge) Example.INSTANCE).getFIeldExample()`
+`((IExampleBridge) Example.INSTANCE).getFieldExample()`
 This is similar in concept to Mixin accessors. The importancs of this system, however, can be seen below:
 ```java
 public interface IMinecraftBridge extends IBridge
